@@ -1,0 +1,4 @@
+#!/usr/bin/env just --justfile
+
+generate_api:
+    openapi-generator-cli generate -i ../server/open-api.json -g rust -o api --package-name server-sdk -p supportAsync=false

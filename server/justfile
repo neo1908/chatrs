@@ -1,0 +1,4 @@
+#!/usr/bin/env just --justfile
+
+deploy_dirty:
+    cargo shuttle deploy --name chatrs-server2 --allow-dirty
